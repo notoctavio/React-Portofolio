@@ -16,10 +16,6 @@
   </p>
 </div>
 
-<p align="center">
-  <img src="./public/og-cover.png" alt="Portfolio preview" width="100%" />
-</p>
-
 ## Features
 
 - Smooth hero intro and polished section transitions
