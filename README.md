@@ -17,7 +17,7 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/notoctavio/React-Portofolio/main/public/og-cover.png" alt="Portfolio preview" width="100%" />
+  <img src="./public/og-cover.png" alt="Portfolio preview" width="100%" />
 </p>
 
 ## Features
