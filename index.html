@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-pt-16 scroll-smooth reveal-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Final Year Automation & Computer Science Student at the Technical University of Cluj-Napoca. Passionate about AI and Software Development." />
+    <meta name="author" content="Octavio-Daniel Vizaru" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.octaviodanielvizaru.xyz" />
+    <meta property="og:title" content="Octavio-Daniel Vizaru — Automation & Computer Science Student" />
+    <meta property="og:description" content="Final Year Automation & Computer Science Student at the Technical University of Cluj-Napoca. Passionate about AI and Software Development." />
+    <meta property="og:image" content="https://www.octaviodanielvizaru.xyz/og-cover.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.octaviodanielvizaru.xyz" />
+    <meta property="twitter:title" content="Octavio-Daniel Vizaru — Automation & Computer Science Student" />
+    <meta property="twitter:description" content="Final Year Automation & Computer Science Student at the Technical University of Cluj-Napoca. Passionate about AI and Software Development." />
+    <meta property="twitter:image" content="https://www.octaviodanielvizaru.xyz/og-cover.png" />
+
+    <link rel="canonical" href="https://www.octaviodanielvizaru.xyz" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1" />
+    <link rel="shortcut icon" href="/favicon.svg?v=2" />
+    <title>Octavio-Daniel Vizaru — Automation & Computer Science Student</title>
+
+    <!-- 1. Preload static font files -->
+    <link rel="preload" href="/fonts/gabarito-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/be-vietnam-pro-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/be-vietnam-pro-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/be-vietnam-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+
+    <!-- 2. Blocking Preflight Script -->
+    <script>
+      (function() {
+        // Theme Detection
+        try {
+          const theme = localStorage.getItem('theme');
+          const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const isDark = theme === 'dark' || (!theme && systemDark);
+          if (isDark) document.documentElement.classList.add('dark');
+          else document.documentElement.classList.remove('dark');
+        } catch (e) {}
+
+        // Reveal Logic
+        function reveal() {
+          document.documentElement.classList.remove('reveal-hidden');
+          document.documentElement.classList.add('reveal-show');
+        }
+
+        // Wait for fonts to be ready
+        if (document.fonts && document.fonts.load) {
+          Promise.all([
+            document.fonts.load('700 1em "Gabarito Variable"'),
+            document.fonts.load('700 1em "Be Vietnam Pro"'),
+            document.fonts.load('500 1em "Be Vietnam Pro"'),
+            document.fonts.load('400 1em "Be Vietnam Pro"')
+          ]).then(reveal).catch(reveal);
+          
+          // Longer fallback timeout
+          setTimeout(reveal, 1000);
+        } else {
+          reveal();
+        }
+      })();
+    </script>
+
+    <style>
+      .reveal-hidden {
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+      .reveal-show {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: opacity 0.3s ease-in !important;
+      }
+      
+      html { background-color: #fafafa; }
+      html.dark { background-color: #0a0a0a; }
+      body { background-color: inherit; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

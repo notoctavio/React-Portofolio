@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/fonts/be-vietnam-pro-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url("/fonts/be-vietnam-pro-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url("/fonts/be-vietnam-pro-latin-600-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("/fonts/be-vietnam-pro-latin-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gabarito Variable";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: block;
+  src: url("/fonts/gabarito-latin-wght-normal.woff2") format("woff2-variations");
+}
